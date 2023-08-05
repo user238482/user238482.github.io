@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anomalies</title>
+    <style>
+        body {
+            background-color: peachpuff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .anomalies {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .anomaly {
+            border: 1px solid black;
+            margin: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            width: 90%;
+            box-sizing: border-box;
+        }
+
+        .anomaly img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        .anomaly-details {
+            flex: 1;
+            padding-right: 10px;
+        }
+
+        .anomaly-title {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .red-star {
+            color: red;
+            font-size: 18px;
+            margin-left: 5px;
+        }
+        
+        .orange-star {
+            color: orange;
+            font-size: 18px;
+            margin-left: 5px;
+        }
+        
+        .yellow-star {
+            color: yellow;
+            font-size: 18px;
+            margin-left: 5px;
+        }
+
+        .anomaly-description {
+            color: gray;
+            margin: 0;
+        }
+
+        .archives-button {
+            background-color: white;
+            border: 2px solid black;
+            color: black;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .key {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .key-item {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .star {
+            margin-right: 5px;
+            font-size: 20px;
+        }
+
+        .orange {
+            color: orange;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="key">
+        <div class="key-item">
+            <div class="star orange">★</div>
+            <div>moderate</div>
+        </div>
+        <div class="key-item">
+            <div class="star red">★</div>
+            <div>critical</div>
+        </div>
+        <div class="key-item">
+            <div class="star green">★</div>
+            <div>stable</div>
+        </div>
+    </div>
+
+    <div class="anomalies">
+        <div class="anomaly">
+            <img src="https://i.postimg.cc/XN8pGzYf/pseudohuman.jpg" alt="Anomaly 1">
+            <div class="anomaly-details">
+                <h3 class="anomaly-title">Pseudo-Human<span class="red-star">★</span></h3>
+                <p class="anomaly-description">Wild entities that take on the appearance of humans and lure humans with screams.</p>
+            </div>
+            <a href="archive1.html" class="archives-button">Archives</a>
+        </div>
+    </div>
+</body>
+</html>
