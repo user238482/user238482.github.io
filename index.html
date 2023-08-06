@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quid Queris?</title>
+    <style>
+        body {
+            background-color: peachpuff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .question-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .question {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .textbox {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        .submit-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-container">
+        <div class="question">quid queris?</div>
+        <input type="text" id="answer" class="textbox" placeholder="Enter Answer...">
+        <button id="submit-button" class="submit-button">Submit</button>
+    </div>
+
+    <script>
+        const correctAnswer = "what also seeks me";  // Change this to the correct answer
+
+        const submitButton = document.getElementById("submit-button");
+        submitButton.addEventListener("click", () => {
+            const answerInput = document.getElementById("answer").value;
+            if (answerInput === correctAnswer) {
+                window.location.href = "https://example.com";  // Change the URL to your desired redirect
+            } else {
+                alert("Incorrect answer.");
+            }
+        });
+    </script>
+</body>
+</html>
